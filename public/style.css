@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+ 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+}
+section.chat__section {
+    /* width: 800px; */
+    /* max-width: 90%; */
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* width: 90%; */
+    /* max-width: 90%; */
+    /* margin-left: 26%; */
+    /* height: 100%; */
+}
+.brand {
+    padding: 7px;
+    background: #930000;
+    display: flex;
+    align-items: center;
+    
+}
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(248, 244, 244);
+    margin-left: 10px;
+}
+.message__area{
+    height: 90%;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 3px;
+    overflow-wrap: break-word;
+    position: absolute;
+}
+textarea {
+    /* width: 100%; */
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+    /* bottom: 0 !important; */
+    /* position: absolute; */
+    width: 50%;
+    border: 2px solid rgb(158, 148, 148);
+    border-radius: 25px;
+    margin-left: 26% !important;
+}
+
+.message {
+    /* padding: 20px;  */
+    border-radius: 4px; 
+    margin-bottom: 24px;
+    max-width: 300px;
+    position: relative;
+}
+.incoming {
+    background: #F3F3F3F3;
+    color: #787575;  
+    overflow-wrap: break-word;
+}
+.outgoing {
+    background: #930000;
+    color: #fffafa;
+    margin-left: auto;
+    overflow-wrap: break-word;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.NewUserTag {
+    text-align: center;
+    color: #686868;
+    padding: 4px;
+}
+
+.typing__area {  
+    text-align: right;
+    padding-right: 20px;
+    color: #686868;
+    position: absolute;
+    top: 90%;
+    margin-left: 5%;
+}
+
+.typing-gif {
+    max-width: 32px;
+    min-width: 32px;
+}
+
+#Anch{
+    text-decoration: none !important;
+}
+
+/* .Mainsection {
+    height: 100%;
+    width: 100%;
+} */
+
+
+/*--------------------
+Bounce
+--------------------*/
+@keyframes bounce { 
+    0% { transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    4.7% { transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    9.41% { transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    14.11% { transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    18.72% { transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    24.32% { transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    29.93% { transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    35.54% { transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    41.04% { transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    52.15% { transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    63.26% { transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    85.49% { transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  }
+  
+  
+  @keyframes ball { 
+    from {
+      transform: translateY(0) scaleY(.8);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+
+  .message {
+    /* background-color: white;
+    -webkit-transition: all 0.25s !important;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    position: relative;
+    float: bottom;
+    top: -100px;
+    opacity: 0; */
+    }
+
+
+
